@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Kahramaa Smart Assistant</title>
+    <title>BPM Smart Assistant</title>
     <meta charset="UTF-8">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -29,6 +29,7 @@
       justify-content: center; /* Center items vertically */
       height: 100px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      position: relative; /* Added position property */
     }
 
     #banner-icon {
@@ -45,7 +46,15 @@
         width: 100%;
     }
 
-    
+    /* Added styles for the "BETA" label */
+    #banner::after {
+      content: "BETA";
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: red;
+      font-weight: bold;
+    }
         
     </style>
   </head>
@@ -54,7 +63,6 @@
     <div>
       <div id="banner">
         <img src="bpm_logo.png" alt="Icon Description" id="banner-icon">
-        <!-- <h1>Kahramaa's Smart Assistant  -  مساعد كهرماء الذكي</h1> -->
       </div>
       <div id="webchat" role="main">
       </div>
@@ -74,7 +82,7 @@
         };
 
         
-        const tokenEndpointURL = new URL('https://defaultd4d2a571d1fc4b149ed5c22506ef1d.82.environment.api.powerplatform.com/powervirtualagents/botsbyschema/crf89_bpmMr/directline/token?api-version=2022-03-01-preview');
+        const tokenEndpointURL = new URL('https://defaultd4d2a571d1fc4b149ed5c22506ef1d.82.environment.api.powerplatform.com/powervirtualagents/botsbyschema/crf89_bpmAiAssistent2/directline/token?api-version=2022-03-01-preview');
 
         const locale = document.documentElement.lang || 'en'; // Uses language specified in <html> element and fallback to English (United States).
         
