@@ -31,15 +31,35 @@
             cursor: pointer;
         }
 
-    #open-chatbot img {
+        #open-chatbot img {
             width: 50px;
             height: 50px;
             border-radius: 80%; /* Make the image round */
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Add a shadow */
         }
+
+        #elt-logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 15%;
+            height: 10%;
+        }
+        
     </style>
 </head>
 <body>
+    <img id="elt-logo" src="ELTECHNOLOGY.png" alt="ElTechnology Logo">
+        
+    <div id="middle-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+        <img src="bpm_logo.png" alt="Your Image" style="margin-bottom: 20px;">
+        <h1 style="text-align: center;">Test your AI bot now, click below</h1>
+        <img src="arrow.png" alt="Arrow Image" style="margin-top: 20px; transform: rotate(-25deg); margin-left: 1000px;">
+    </div>
+
+   
+
+
     <div id="chatbot">
         <iframe src="bot.html"></iframe>
     </div>
